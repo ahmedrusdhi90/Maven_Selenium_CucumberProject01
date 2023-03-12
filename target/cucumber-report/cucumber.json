@@ -1,0 +1,811 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2634314200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.HRMLoginSteps.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-12T16:44:32.426Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4186800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2520194100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.lounchBrowser()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 1514200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 731974800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3947882700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters username as \"Admin\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.HRMLoginSteps.goToHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3444928900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be able to login sucessfully and new page open",
+            "match": {
+              "location": "stepdefinitions.HRMLoginSteps.verifyLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ValidCredentials"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3033899700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.HRMLoginSteps.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-12T16:44:45.851Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3014500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1569927300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.lounchBrowser()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 763729000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4952098600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters username as \"Admin\" and password as \"admin12$$\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin12$$\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.HRMLoginSteps.goToHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 327826100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should be able to see error message \"Invalid credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid credentials\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.HRMLoginSteps.verifyErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@InvalidCredentials"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2017912800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.HRMLoginSteps.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-12T16:44:56.529Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1001200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1513282500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.lounchBrowser()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 999400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 728984300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4392070300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters username as \"admin$$\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin$$\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.HRMLoginSteps.goToHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 322184300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should be able to see error message \"Invalid credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid credentials\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.HRMLoginSteps.verifyErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@InvalidCredentials"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2652901600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.HRMLoginSteps.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-12T16:45:05.525Z",
+        "before": [
+          {
+            "result": {
+              "duration": 999300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1560950400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.lounchBrowser()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1003100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 688054600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5055111600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters username as \"abc123\" and password as \"xyz$$\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc123\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"xyz$$\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepdefinitions.HRMLoginSteps.goToHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 304522100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should be able to see error message \"Invalid credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid credentials\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.HRMLoginSteps.verifyErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@InvalidCredentials"
+          }
+        ]
+      }
+    ],
+    "name": "Login to HRM Application",
+    "description": "",
+    "id": "login-to-hrm-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/HRMLoginPage.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-12T16:45:15.807Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1013300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1566643700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.lounchBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login page title",
+        "description": "",
+        "id": "login-page-feature;login-page-title",
+        "after": [
+          {
+            "result": {
+              "duration": 996100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 710249000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1005800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on login page",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1002400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user gets the title of the page",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.user_gets_the_title_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "page title should be \"Login - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login - My Store\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.LoginSteps.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-12T16:45:18.117Z",
+        "before": [
+          {
+            "result": {
+              "duration": 997000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1506414900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.lounchBrowser()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Forgot Password link",
+        "description": "",
+        "id": "login-page-feature;forgot-password-link",
+        "after": [
+          {
+            "result": {
+              "duration": 997600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 669482000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on login page",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1002800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "forgot your password link should be displayed",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.forgot_your_password_link_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-12T16:45:20.313Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1032300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1483372400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.lounchBrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login with correct credentials",
+        "description": "",
+        "id": "login-page-feature;login-with-correct-credentials",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 680183100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is on login page",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters username \"dec2020secondbatch@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dec2020secondbatch@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.LoginSteps.user_enters_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters password \"Selenium@12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selenium@12345\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.LoginSteps.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user gets the title of the home page",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.user_gets_the_title_of_the_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1326400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "page title should be \"My account - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My account - My Store\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.LoginSteps.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login page feature",
+    "description": "",
+    "id": "login-page-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LoginPage.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,4 @@
+stepdefinitions\HRMLoginSteps.class
+stepdefinitions\LoginSteps.class
+appHooks\ApplicationHooks.class
+testRunners\MyTestRunner.class
